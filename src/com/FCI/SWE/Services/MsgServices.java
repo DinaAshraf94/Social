@@ -98,11 +98,11 @@ public class MsgServices
 	}
 	@POST
 	@Path("/SendMsg")
-	public static String sendMsg(@FormParam("cname")String cname, @FormParam("content") String content)
+	public static String sendMsg(@FormParam("cname")String cname, @FormParam("content") String content,@FormParam("email")String email)
 	{
 		JSONObject jsonObj = new JSONObject();
 		System.out.print("here0!");
-		boolean msgadded= MsgEntity.addMsg(cname,User.getCurrentActiveUser().getEmail(), content, (ArrayList<String>) selected);
+		boolean msgadded= MsgEntity.addMsg(cname,email, content, (ArrayList<String>) selected);
 		selected.clear();
 		if(msgadded)
 		{

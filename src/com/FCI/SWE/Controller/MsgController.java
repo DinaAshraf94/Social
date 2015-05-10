@@ -94,7 +94,7 @@ public class MsgController
 	public String sendMSG(@QueryParam("cname")String cname, @QueryParam("content") String content)
 	{
 		String serviceUrl = "http://localhost:8888/rest/SendMsg";
-		String urlParameters = "cname="+cname+"&content="+content; 
+		String urlParameters = "cname="+cname+"&content="+content+"&email="+User.getCurrentActiveUser().getEmail(); 
 		String retJson = Connection.connect(serviceUrl, urlParameters, "POST", "application/x-www-form-urlencoded;charset=UTF-8");
 	
 		

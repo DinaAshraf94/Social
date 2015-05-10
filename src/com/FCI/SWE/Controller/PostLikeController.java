@@ -20,6 +20,7 @@ import org.json.simple.parser.ParseException;
 
 import com.FCI.SWE.Models.HashTagEntity;
 import com.FCI.SWE.Models.PageEntity;
+import com.FCI.SWE.Models.User;
 
 
 @Path("/")
@@ -39,7 +40,7 @@ public class PostLikeController
 		System.out.println("hash ids "+ HashTagController.ids.get(index));
 		System.out.println("counter is"+count+" "+index+ " "+ id);
 		String serviceUrl = "http://localhost:8888/rest/postLike/";
-		String urlParameters = "id="+id;
+		String urlParameters = "id="+id+"&user1="+User.getCurrentActiveUser().getEmail();
 		String retJson = Connection.connect(serviceUrl, urlParameters, "POST", "application/x-www-form-urlencoded;charset=UTF-8");
 
 

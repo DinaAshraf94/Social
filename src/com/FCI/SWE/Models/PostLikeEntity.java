@@ -22,7 +22,7 @@ import com.google.appengine.api.datastore.Transaction;
 
 public class PostLikeEntity 
 {
-	public static boolean insert(String id)
+	public static boolean insert(String id,String user1)
 	{
 		if(!checkExist(id))
 		{
@@ -46,7 +46,7 @@ public class PostLikeEntity
 
 
 				like.setProperty("id", id);
-				like.setProperty("user" , User.getCurrentActiveUser().getEmail());
+				like.setProperty("user" , user1);
 				like.setProperty("time", time);
 
 				System.out.println("here");

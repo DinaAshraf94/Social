@@ -24,10 +24,10 @@ public class PostLikeService
 {
 	@POST
 	@Path("/postLike")	
-	public String Like(@FormParam("id") String id)
+	public String Like(@FormParam("id") String id,@FormParam("user1") String user1)
 	{
 		JSONObject jsonObj = new JSONObject();
-		if(PostLikeEntity.insert(id))
+		if(PostLikeEntity.insert(id,user1))
 		{
 			jsonObj.put("response", "liked");
 			

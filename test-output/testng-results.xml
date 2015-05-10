@@ -2,24 +2,24 @@
 <testng-results skipped="0" failed="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="992" started-at="2015-05-10T20:07:33Z" finished-at="2015-05-10T20:07:34Z">
+  <suite name="Default suite" duration-ms="10298" started-at="2015-05-10T21:03:45Z" finished-at="2015-05-10T21:03:55Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="992" started-at="2015-05-10T20:07:33Z" finished-at="2015-05-10T20:07:34Z">
-      <class name="com.FCI.SWE.Services.HashTagServicesTest">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.FCI.SWE.Services.HashTagServicesTest@23852c7f]" name="setUp" is-config="true" duration-ms="120" started-at="2015-05-10T22:07:33Z" finished-at="2015-05-10T22:07:33Z">
+    <test name="Default test" duration-ms="10298" started-at="2015-05-10T21:03:45Z" finished-at="2015-05-10T21:03:55Z">
+      <class name="com.FCI.SWE.Services.PostLikeServiceTest">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.FCI.SWE.Services.PostLikeServiceTest@3626a69f]" name="setUp" is-config="true" duration-ms="110" started-at="2015-05-10T23:03:45Z" finished-at="2015-05-10T23:03:45Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="createHashtag()[pri:0, instance:com.FCI.SWE.Services.HashTagServicesTest@23852c7f]" name="createHashtag" duration-ms="281" started-at="2015-05-10T22:07:33Z" finished-at="2015-05-10T22:07:33Z">
+        <test-method status="PASS" signature="Like()[pri:0, instance:com.FCI.SWE.Services.PostLikeServiceTest@3626a69f]" name="Like" duration-ms="9577" started-at="2015-05-10T23:03:45Z" finished-at="2015-05-10T23:03:54Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- createHashtag -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.FCI.SWE.Services.HashTagServicesTest@23852c7f]" name="tearDown" is-config="true" duration-ms="550" started-at="2015-05-10T22:07:33Z" finished-at="2015-05-10T22:07:34Z">
+        </test-method> <!-- Like -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.FCI.SWE.Services.PostLikeServiceTest@3626a69f]" name="tearDown" is-config="true" duration-ms="570" started-at="2015-05-10T23:03:54Z" finished-at="2015-05-10T23:03:55Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- com.FCI.SWE.Services.HashTagServicesTest -->
+      </class> <!-- com.FCI.SWE.Services.PostLikeServiceTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

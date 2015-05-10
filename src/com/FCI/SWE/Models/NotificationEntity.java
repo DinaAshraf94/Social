@@ -48,7 +48,7 @@ public class NotificationEntity
 	public static ArrayList<String>type = new ArrayList<String>();
 	public static ArrayList<String> parameters= new ArrayList<String>();
 	
-	public static String getreciveres( String email)
+	public static boolean getreciveres( String email)
 	{
 		
 		DatastoreService datastore = DatastoreServiceFactory
@@ -70,7 +70,9 @@ public class NotificationEntity
 		}
 		System.out.println("recivers"+parameters);
 
-		return null;
+		if(parameters.size()==0)
+			return false;
+		return true;
 	}
 	
 

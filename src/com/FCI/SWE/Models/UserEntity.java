@@ -200,10 +200,10 @@ public class UserEntity
 		for (Entity entity : pq.asIterable()) { // like iterator to traverse
 												// each record
 
+			//System.out.println("here ! 3alashn el test");
 			if (entity.getProperty("email").toString().equals(email)) {
 
 				return true;
-
 			}
 		}
 

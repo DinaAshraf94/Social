@@ -67,8 +67,19 @@ public class notificationService
 	@Path("/getAllNotifications")
 	public String getAllNotifications(@FormParam("currentUserEmail") String currentUserEmail) throws ParseException
 	{
-		NotificationEntity.getreciveres(currentUserEmail);
-		return null;
+		boolean flag=NotificationEntity.getreciveres(currentUserEmail);
+		JSONObject object = new JSONObject();
+		
+		if(flag)
+		{
+			object.put("response","ok");
+			
+		}
+		else
+			object.put("response", "fail");
+		
+		return object.toJSONString();
+		
 		
 		
 	}
@@ -77,6 +88,7 @@ public class notificationService
 	@Path("/dumby")
 	public String dumb()
 	{
+		
 		NotificationEntity.insertdumb();
 		
 		return null;

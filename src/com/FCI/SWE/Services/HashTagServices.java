@@ -24,7 +24,7 @@ public class HashTagServices
 	
 	@POST
 	@Path("/Search4HashTag")
-	public String createGroup(@FormParam("name") String name) {
+	public String createHashtag(@FormParam("name") String name) {
 		
 		System.out.println("IN PAGE SERVICES /Search4PageService");
 		
@@ -46,7 +46,6 @@ public class HashTagServices
 			//email of user or page name where post exists
 			object.put("place1", hashs.getPostPlace());
 			object.put("id", hashs.getID());
-			
 			
 			returnedJson.put(object);
 		}

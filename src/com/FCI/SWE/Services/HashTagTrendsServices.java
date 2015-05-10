@@ -28,8 +28,14 @@ public class HashTagTrendsServices
 	{
 		HashTagTrendsController.trend=HashTagTrendsEntity.getTrends();
 		System.out.println(HashTagTrendsController.trend);
-		
-		return "done";
+		JSONObject object = new JSONObject();
+		System.out.println("size is "+HashTagTrendsController.trend.size());
+		if(HashTagTrendsController.trend.size()!=0)
+		object.put("Status", "OK");
+			
+		else
+			object.put("Status", "fail");
+		return object.toJSONString();
 	}
 	
 }
